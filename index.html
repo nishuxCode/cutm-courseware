@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Centurion University COURSEWARE</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark cutm-navbar px-4">
+
+        <span class="navbar-brand">Centurion University Courseware</span>
+        <button class="btn btn-light" data-bs-toggle="offcanvas" data-bs-target="#menu">☰</button>
+    </nav>
+
+    <!-- SIDEBAR -->
+    <div class="offcanvas offcanvas-end text-bg-dark cutm-sidebar" id="menu">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="mb-0">Menu</h5>
+            <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body p-0">
+            <ul class="list-group list-group-flush cutm-menu">
+
+                <li class="list-group-item">
+                    <a href="programme.html">Programme Structure</a>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="assessment.html">Assessment Criterion</a>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="info.html">Other Information</a>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="core.html">Core Courses</a>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="domain.html">Domain Courses</a>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="skill.html">Skill Courses</a>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="certificate.html">Certificate Courses</a>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="advanced.html">Advanced Certificate Courses</a>
+                </li>
+
+                <li class="list-group-item">
+                    <a href="diploma.html">Diploma Courses</a>
+                </li>
+
+                <li class="list-group-item logout">
+                    <a href="#">Logout</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- CUTM LOGO + SEARCH SECTION -->
+    <div class="cutm-logo-section py-3 bg-white">
+        <div class="container-fluid px-4">
+            <div class="row align-items-center">
+
+                <!-- LOGO -->
+                <div class="col-md-4 col-12 text-md-start text-center mb-2 mb-md-0">
+                    <img src="images/logo.png" alt="CUTM Logo" class="cutm-logo">
+                </div>
+
+                <!-- SEARCH BAR -->
+                <div class="col-md-8 col-12">
+                    <form class="cutm-search d-flex">
+                        <input type="text" class="form-control" placeholder="Search here...">
+                        <button class="btn btn-primary ms-2">
+                        🔍
+                    </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- HERO -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="images/image1.jpg" class="d-block w-100 hero-img">
+                <div class="carousel-caption">
+                    <h2>Smart Learning at CUTM</h2>
+                    <p>Empowering students through digital ERP</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/image2.jpg" class="d-block w-100 hero-img">
+                <div class="carousel-caption">
+                    <h2>Collaborative Campus</h2>
+                    <p>Learn together, grow together</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/image3.jpg" class="d-block w-100 hero-img">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/image4.jpg" class="d-block w-100 hero-img">
+            </div>
+
+        </div>
+    </div>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Courseware Dashboard</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="bg-light">
+
+        <div class="container my-5">
+            <h1 class="mb-4 text-center">📚 College Courseware Dashboard</h1>
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-md-4 card-container">
+                    <div class="erp-card">
+                        <div class="front" style="background: #ffc107; color:#000;">
+                            <div class="icon">📘</div>
+                            <h5>Programme Structure</h5>
+                            <p>Read about all our Programme Structure</p>
+                        </div>
+                        <div class="back" style="background:#ffb300; color:#fff;">
+                            <div class="icon">📘</div>
+                            <h5>Programme Structure</h5>
+                            <p>Click below to view</p>
+                            <a href="pages/programme.html" class="btn btn-light mt-2">Open</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4 card-container">
+                    <div class="erp-card">
+                        <div class="front" style="background: #4caf50; color:#fff;">
+                            <div class="icon">🎓</div>
+                            <h5>Assessment Criterion</h5>
+                            <p>Read about all our Assessment Criterion</p>
+                        </div>
+                        <div class="back" style="background:#388e3c; color:#fff;">
+                            <div class="icon">🎓</div>
+                            <h5>Assessment Criterion</h5>
+                            <p>Click below to view</p>
+                            <a href="pages/assessment.html" class="btn btn-light mt-2">Open</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4 card-container">
+                    <div class="erp-card">
+                        <div class="front" style="background: #03a9f4; color:#fff;">
+                            <div class="icon">🧠</div>
+                            <h5>Other Information</h5>
+                            <p>TimeTables, FAQs & campus info</p>
+                        </div>
+                        <div class="back" style="background:#0288d1; color:#fff;">
+                            <div class="icon">🧠</div>
+                            <h5>Other Information</h5>
+                            <p>Click below to view</p>
+                            <a href="pages/other-info.html" class="btn btn-light mt-2">Open</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-4 card-container">
+                    <div class="erp-card">
+                        <div class="front" style="background: #e91e63; color:#fff;">
+                            <div class="icon">📘</div>
+                            <h5>Core Courses</h5>
+                            <p>Read about all our Core Courses</p>
+                        </div>
+                        <div class="back" style="background:#c2185b; color:#fff;">
+                            <div class="icon">📘</div>
+                            <h5>Core Courses</h5>
+                            <p>Click below to view</p>
+                            <a href="pages/core.html" class="btn btn-light mt-2">Open</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-4 card-container">
+                    <div class="erp-card">
+                        <div class="front" style="background: #ff9800; color:#000;">
+                            <div class="icon">🎯</div>
+                            <h5>Domain Courses</h5>
+                            <p>Read about all our Domain Courses</p>
+                        </div>
+                        <div class="back" style="background:#f57c00; color:#fff;">
+                            <div class="icon">🎯</div>
+                            <h5>Domain Courses</h5>
+                            <p>Click below to view</p>
+                            <a href="pages/domain.html" class="btn btn-light mt-2">Open</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-4 card-container">
+                    <div class="erp-card">
+                        <div class="front" style="background: #9c27b0; color:#fff;">
+                            <div class="icon">🛠️</div>
+                            <h5>Skill Courses</h5>
+                            <p>Read about all Skill Courses</p>
+                        </div>
+                        <div class="back" style="background:#7b1fa2; color:#fff;">
+                            <div class="icon">🛠️</div>
+                            <h5>Skill Courses</h5>
+                            <p>Click below to view</p>
+                            <a href="pages/skill.html" class="btn btn-light mt-2">Open</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-md-4 card-container">
+                    <div class="erp-card">
+                        <div class="front" style="background: #795548; color:#fff;">
+                            <div class="icon">📜</div>
+                            <h5>Certificate Courses</h5>
+                            <p>Read about all Certificate Courses</p>
+                        </div>
+                        <div class="back" style="background:#5d4037; color:#fff;">
+                            <div class="icon">📜</div>
+                            <h5>Certificate Courses</h5>
+                            <p>Click below to view</p>
+                            <a href="pages/certificate.html" class="btn btn-light mt-2">Open</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-md-4 card-container">
+                    <div class="erp-card">
+                        <div class="front" style="background: #009688; color:#fff;">
+                            <div class="icon">🚀</div>
+                            <h5>Advanced Certificate</h5>
+                            <p>Advanced level certifications</p>
+                        </div>
+                        <div class="back" style="background:#00796b; color:#fff;">
+                            <div class="icon">🚀</div>
+                            <h5>Advanced Certificate</h5>
+                            <p>Click below to view</p>
+                            <a href="pages/advanced.html" class="btn btn-light mt-2">Open</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="col-md-4 card-container">
+                    <div class="erp-card">
+                        <div class="front" style="background: #607d8b; color:#fff;">
+                            <div class="icon">🏅</div>
+                            <h5>Diploma Courses</h5>
+                            <p>Read about all Diploma courses</p>
+                        </div>
+                        <div class="back" style="background:#455a64; color:#fff;">
+                            <div class="icon">🏅</div>
+                            <h5>Diploma Courses</h5>
+                            <p>Click below to view</p>
+                            <a href="pages/diploma.html" class="btn btn-light mt-2">Open</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        </div>
+
+        <!-- FOOTER -->
+        <!-- FOOTER -->
+        <footer class="cutm-footer">
+            <div class="footer-container">
+
+                <!-- Logo + About -->
+                <div class="footer-section">
+                    <img src="images/logo.png" alt="CUTM Logo" class="cutm-logo-footer">
+                    <p class="footer-desc">
+                        Centurion University of Technology & Management is committed to excellence in education, innovation, and research.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programme.html">Programme</a></li>
+                        <li><a href="assessment.html">Assessment</a></li>
+                        <li><a href="certificate.html">Certificates</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 nk0590467@example.com</p>
+                    <p>📞 +91 9693570124</p>
+                    <p>📍 CUTM, Odisha, India</p>
+                </div>
+
+                <!-- Developer Info -->
+                <div class="footer-section">
+                    <h4>Developer</h4>
+                    <p>
+                        Designed & Developed By <br>
+                        <strong>Nishu</strong> ❤️
+                    </p>
+                    <p class="footer-tag">Courseware System – CUTM</p>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <p>
+                    Copyright © 2020 Centurion University of Technology & Management
+                </p>
+            </div>
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+    </html>
