@@ -4,40 +4,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domain</title>
+    <title>Domain Courses | CUTM</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial;
-            padding: 20px;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f4f7ff, #eef2ff);
+            color: #333;
+        }
+        /* Header */
+        
+        header {
+            background: #0b1c2d;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h3 {
+            color: #fff;
+            margin: 0;
         }
         
         nav a {
-            margin-right: 10px;
-            color: blue;
+            color: #fff;
+            margin-left: 16px;
             text-decoration: none;
+            font-size: 14px;
         }
         
         nav a:hover {
             text-decoration: underline;
         }
+        /* Title */
+        
+        .page-title {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+        
+        .page-title h1 {
+            color: #0b1c2d;
+        }
+        
+        .page-title p {
+            max-width: 750px;
+            margin: auto;
+            color: #555;
+        }
+        /* Domain Cards */
+        
+        .domain-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
+        
+        .domain-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+        
+        .domain-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .domain-card h3 {
+            color: #0b1c2d;
+            margin-bottom: 10px;
+        }
+        
+        .domain-card p {
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .domain-card span {
+            display: inline-block;
+            margin-top: 12px;
+            background: #0b1c2d;
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        /* Footer */
+        
+        footer {
+            background: #0b1c2d;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+        }
+        
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <nav>
-        <a href="programme.html">Programme</a>
-        <a href="assessment.html">Assessment</a>
-        <a href="other-info.html">Other Info</a>
-        <a href="core.html">Core</a>
-        <a href="domain.html">Domain</a>
-        <a href="skill.html">Skill</a>
-        <a href="certificate.html">Certificate</a>
-        <a href="advanced.html">Advanced</a>
-        <a href="diploma.html">Diploma</a>
-    </nav>
 
-    <h1>Domain</h1>
-    <p>Welcome to the Domain page.</p>
+    <!-- HEADER -->
+    <header>
+        <h3>CUTM Courseware</h3>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Programme</a>
+            <a href="index.html">Assessment</a>
+            <a href="index.html">Core</a>
+            <a href="index.html">Domain</a>
+            <a href="index.html">Skill</a>
+            <a href="index.html">Certificate</a>
+            <a href="index.html">Advanced</a>
+            <a href="index.html">Diploma</a>
+        </nav>
+    </header>
+
+    <!-- TITLE -->
+    <section class="page-title">
+        <h1>Domain Specializations</h1>
+        <p>
+            Domain courses help students gain in-depth knowledge in their chosen specialization aligned with industry needs.
+        </p>
+    </section>
+
+    <!-- DOMAIN COURSES -->
+    <section class="domain-container">
+
+        <div class="domain-card">
+            <h3>Data Science</h3>
+            <p>Data analysis, Python, machine learning, and visualization tools.</p>
+            <span>Industry Domain</span>
+        </div>
+
+        <div class="domain-card">
+            <h3>Artificial Intelligence</h3>
+            <p>Neural networks, deep learning, and AI-based systems.</p>
+            <span>Trending Domain</span>
+        </div>
+
+        <div class="domain-card">
+            <h3>Cyber Security</h3>
+            <p>Ethical hacking, network security, and digital forensics.</p>
+            <span>Security Domain</span>
+        </div>
+
+        <div class="domain-card">
+            <h3>Cloud Computing</h3>
+            <p>AWS, Azure, virtualization, and cloud deployment models.</p>
+            <span>Cloud Domain</span>
+        </div>
+
+        <div class="domain-card">
+            <h3>Internet of Things (IoT)</h3>
+            <p>Smart devices, sensors, and real-time data communication.</p>
+            <span>Hardware + Software</span>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2020 Centurion University of Technology & Management | Domain Courses
+    </footer>
+
 </body>
 
 </html>

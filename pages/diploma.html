@@ -4,40 +4,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diploma</title>
+    <title>Diploma Courses | CUTM</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial;
-            padding: 20px;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f0f7ff, #eaf0ff);
+            color: #333;
+        }
+        /* Header */
+        
+        header {
+            background: #0b1c2d;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         
         nav a {
-            margin-right: 10px;
-            color: blue;
+            color: #fff;
+            margin-left: 18px;
             text-decoration: none;
+            font-size: 14px;
         }
         
         nav a:hover {
             text-decoration: underline;
         }
+        /* Page Title */
+        
+        .page-title {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+        
+        .page-title h1 {
+            color: #0b1c2d;
+        }
+        
+        .page-title p {
+            max-width: 700px;
+            margin: auto;
+            color: #555;
+        }
+        /* Diploma Cards */
+        
+        .diploma-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
+        
+        .diploma-card {
+            background: #fff;
+            border-radius: 18px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+        
+        .diploma-card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .diploma-card h3 {
+            color: #0b1c2d;
+            margin-bottom: 10px;
+        }
+        
+        .diploma-card p {
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .diploma-card span {
+            display: inline-block;
+            margin-top: 12px;
+            background: #0b1c2d;
+            color: #fff;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        /* Footer */
+        
+        footer {
+            background: #0b1c2d;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+            font-size: 13px;
+        }
+        
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+            nav {
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <nav>
-        <a href="programme.html">Programme</a>
-        <a href="assessment.html">Assessment</a>
-        <a href="other-info.html">Other Info</a>
-        <a href="core.html">Core</a>
-        <a href="domain.html">Domain</a>
-        <a href="skill.html">Skill</a>
-        <a href="certificate.html">Certificate</a>
-        <a href="advanced.html">Advanced</a>
-        <a href="diploma.html">Diploma</a>
-    </nav>
 
-    <h1>Diploma</h1>
-    <p>Welcome to the Diploma page.</p>
+    <!-- HEADER -->
+    <header>
+        <h3 style="color:white;margin:0;">CUTM Courseware</h3>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Programme</a>
+            <a href="index.html">Assessment</a>
+            <a href="index.html">Core</a>
+            <a href="index.html">Domain</a>
+            <a href="index.html">Skill</a>
+            <a href="index.html">Certificate</a>
+            <a href="index.html">Advanced</a>
+            <a href="index.html">Diploma</a>
+        </nav>
+    </header>
+
+    <!-- TITLE -->
+    <section class="page-title">
+        <h1>Diploma Programmes</h1>
+        <p>
+            Diploma programmes focus on practical knowledge, industry exposure, and skill-oriented education.
+        </p>
+    </section>
+
+    <!-- DIPLOMA COURSES -->
+    <section class="diploma-container">
+
+        <div class="diploma-card">
+            <h3>Diploma in Computer Engineering</h3>
+            <p>Programming fundamentals, hardware basics, and system design.</p>
+            <span>3 Years</span>
+        </div>
+
+        <div class="diploma-card">
+            <h3>Diploma in Electrical Engineering</h3>
+            <p>Electrical machines, circuits, power systems, and safety.</p>
+            <span>3 Years</span>
+        </div>
+
+        <div class="diploma-card">
+            <h3>Diploma in Mechanical Engineering</h3>
+            <p>Manufacturing, mechanics, thermodynamics, and CAD basics.</p>
+            <span>3 Years</span>
+        </div>
+
+        <div class="diploma-card">
+            <h3>Diploma in Civil Engineering</h3>
+            <p>Construction technology, surveying, and structural basics.</p>
+            <span>3 Years</span>
+        </div>
+
+        <div class="diploma-card">
+            <h3>Diploma in Electronics & Communication</h3>
+            <p>Electronic circuits, communication systems, and microcontrollers.</p>
+            <span>3 Years</span>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2020 Centurion University of Technology & Management | Diploma Programmes
+    </footer>
+
 </body>
 
 </html>

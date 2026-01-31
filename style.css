@@ -43,6 +43,41 @@
 
 /* Footer Logo - BIG & CLEAR */
 
+
+/* Social Links */
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.social-links a {
+    color: #b0c4de;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+
+/* Footer links hover */
+
+.footer-section a {
+    color: #b0c4de;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 .cutm-footer {
     background: #041a3a;
     color: #dcdcdc;
