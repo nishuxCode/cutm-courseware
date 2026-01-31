@@ -12,11 +12,12 @@
 }
 
 .hero-img {
-    height: 480px;
     width: 100%;
+    height: 70vh;
+    /* Responsive height */
+    min-height: 280px;
+    max-height: 500px;
     object-fit: cover;
-    /* 🔥 full width fill */
-    object-position: center;
 }
 
 .cutm-footer p {
@@ -285,4 +286,20 @@
 .cutm-menu .logout a {
     color: #ff6b6b;
     font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .cutm-logo {
+        height: 70px;
+    }
+    .cutm-search {
+        flex-direction: column;
+    }
+    .cutm-search input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .cutm-search button {
+        width: 100%;
+    }
 }
